@@ -1,0 +1,16 @@
+[package]
+name = "rhino"
+version = "0.1.0"
+authors = ["fenjalien <34489450+fenjalien@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.38"
+clap = "2.33.3"
+lazy_static = "1.4.0"
+onig = "6.1.1"
+regex = "1.4.3"
+serialport = "4.0.0"
+
+[dev-dependencies]
+serial_test = "0.5.1"
