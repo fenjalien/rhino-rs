@@ -10,9 +10,7 @@ fn test_as_char() {
 }
 
 #[test]
-fn test_from_char() {
-    assert_eq!(
-        Command::from_char('S').unwrap(),
-        Command::MotorSpeedAndDirection
-    )
+fn test_from_char() -> Result<()> {
+    assert_eq!(Command::from_char('S')?, Command::MotorSpeedAndDirection);
+    Ok(())
 }
